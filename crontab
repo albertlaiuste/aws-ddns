@@ -1,0 +1,2 @@
+*/5 * * * * /update-dns.sh >> /proc/1/fd/1 2>&1
+

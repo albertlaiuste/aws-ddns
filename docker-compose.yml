@@ -1,0 +1,11 @@
+services:
+  ddns:
+    container_name: aws-ddns
+    build: .
+    image: aws-ddns:latest
+    env_file:
+      - .env
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+
